@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "ScrollMarker",
+  "description": "Allows you to save scroll position on a page",
+  "version": "1.0",
+  "browser_action": {
+    "title": "Go to marked position",
+    "default_icon": "bookmark.png"
+  },
+  "icons" : {
+  "16" : "bookmark.png",
+  "128" : "bookmark.png"
+  },
+  "background": {
+    "scripts": ["bookmark.js"]
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "contextMenus",
+    "storage"
+  ]
+}
